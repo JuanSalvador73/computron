@@ -1,0 +1,235 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.checkout-layout {
+    display: flex;
+    flex-direction: column-reverse; /* Invertido para Móvil */
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.checkout-form {
+    background-color: #dbdbdb;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.error-msg {
+    color: #c0392b;
+    font-size: 0.8rem;
+    display: block;
+    text-align: left;
+    margin-top: 4px;
+    font-weight: bold;
+}
+
+.order-summary-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #e1e4e6;
+}
+
+.card-header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.cart-items-list {
+    padding: 1rem 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.cart-total-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #ededed;
+    font-weight: bold;
+}
+
+.total-amount {
+    color: #27ae60;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.payment-img-logo {
+    height: 24px;
+    width: auto;
+    object-fit: contain;
+}
+
+.btn-complete-order {
+    background-color: #137e43;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-complete-order:hover {
+    background-color: #25b967;
+}
+
+.btn-remove {
+    background-color: #b83a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.btn-remove:hover {
+    background-color: #e96161;
+}
+
+/* Pantalla de Éxito Centrada */
+.success-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.success-card {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+}
+
+.order-id-highlight {
+    color: #27ae60;
+    word-break: break-all;
+}
+
+h1{
+    margin-bottom: 25px;
+}
+/* ==========================================================
+   MEDIA QUERY PARA ESCRITORIO
+   ========================================================== */
+@media (min-width: 769px) {
+    .checkout-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    .form-title {
+        text-align: center;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .full-width-input {
+        grid-column: span 2;
+    }
+
+    .summary-column {
+        position: sticky;
+        top: 2rem;
+    }
+}

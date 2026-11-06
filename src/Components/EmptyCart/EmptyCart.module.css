@@ -1,0 +1,6 @@
+.imgcat {
+  max-width: 100%;    /* Se encoge si el contenedor es más chico que la imagen */
+  width: 478px;         /* Permite que use su tamaño original (478px) en pantallas grandes */
+  height: auto;        /* Mantiene la proporción para que no se vea aplastada */
+  display: block;      /* Elimina espacios en blanco extra en la base */
+}

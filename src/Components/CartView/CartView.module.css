@@ -1,0 +1,257 @@
+/* Contenedor general centrado en pantalla */
+.cart-main-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.cart-card-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e1e4e6;
+}
+
+/* Cabecera negra de la tabla en Computadora (Imagen 2) */
+.cart-table-header {
+    background-color: #000000;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1.5fr 1.5fr 0.5fr;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    align-items: center;
+}
+
+/* Contenedor gris del cuerpo de productos */
+.cart-items-body {
+    background-color: #dbdbdb;
+    padding: 1.5rem;
+}
+
+/* Filas alineadas perfectamente en horizontal */
+.cart-item-row {
+    background-color: #dbdbdb;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1.5fr 1.5fr 0.5fr;
+    padding: 0.5rem 0;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.cart-item-row:last-child {
+    border-bottom: none;
+}
+
+.item-img-box img {
+    max-width: 75px;
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.item-value {
+    font-size: 1.05rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Ocultar elementos de celular por defecto en PC */
+.mobile-label, .mobile-text {
+    display: none;
+}
+
+/* Botón 'X' roja e idéntica de la Imagen 2 */
+.btn-remove {
+    background-color: #b83a3a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.btn-remove:hover {
+    background-color: #d34848;
+}
+
+/* Caja inferior blanca de totales */
+.cart-footer-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.total-amount {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #137e43;
+}
+
+.action-buttons-box {
+    display: flex;
+    gap: 1.5rem;
+    width: auto;
+}
+
+/* Estilos de botones de pie de página */
+.btn-complete-order {
+    background-color: #137e43;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-complete-order:hover {
+    background-color: #25b967;
+}
+
+.btn-empty-cart {
+    background-color: #b83a3a;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-empty-cart:hover {
+    background-color: #e96161;
+}
+
+.cart-empty {
+    text-align: center;
+    padding: 4rem;
+    margin-top: 70px;
+}
+
+.resumen {
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    color:#af0508
+    
+}
+
+/* ==========================================================
+   DISEÑO RESPONSIVO MÓVIL EXCLUSIVO (Imagen 3)
+   ========================================================== */
+@media (max-width: 768px) {
+    .cart-card-wrapper {
+        box-shadow: none;
+        border: none;
+    }
+
+    .cart-table-header {
+        display: none; /* Quitamos cabecera horizontal */
+    }
+
+    .cart-items-body {
+        padding: 0.5rem;
+        background-color: #ffffff;
+    }
+
+    /* La fila se convierte en una tarjeta gris unificada */
+    .cart-item-row {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 1.5rem 1rem;
+        background-color: #dbdbdb;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ccc;
+    }
+
+    .item-img-box {
+        margin-bottom: 0.5rem;
+    }
+
+    .item-img-box img {
+        max-width: 110px;
+    }
+
+    /* Disposición de bloque Izquierda (Etiqueta) y Derecha (Valor) */
+    .item-text-detail {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.3rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-label {
+        display: inline;
+        font-weight: normal;
+        color: #333333;
+    }
+
+    /* Botón eliminar extendido rojo con icono */
+    .desktop-icon {
+        display: none;
+    }
+
+    .mobile-text {
+        display: inline;
+    }
+
+    .btn-remove {
+        width: 100%;
+        height: auto;
+        padding: 0.7rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+    }
+
+    /* Footer estirado verticalmente */
+    .cart-footer-section {
+        align-items: center;
+        padding: 1.5rem 0.5rem;
+    }
+
+    .total-box {
+        width: 100%;
+        text-align: center;
+    }
+
+    .action-buttons-box {
+        flex-direction: column; /* Apilamos los botones uno sobre otro */
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .btn-complete-order, .btn-empty-cart {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+    }
+}

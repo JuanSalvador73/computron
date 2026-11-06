@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    height: auto;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* CONTENEDOR DERECHO: Fuerza a que los textos se apilen uno debajo del otro */
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centra los elementos como en tu ejemplo */
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.productDetailText {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center; /* Alineación centrada para los detalles */
+}
+
+.cardItemDetail {
+    display: flex;
+    border: 1px solid rgb(12, 10, 10);
+    background-color: rgb(220, 220, 218);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 490px;
+    text-align: center;
+    align-items: center;
+}
+
+/* --- CONTENEDOR DE ACCIONES POST-COMPRA --- */
+.purchaseActionsContainer {
+    display: flex;
+    flex-direction: row; /* Mantener en una sola fila los dos botones */
+    justify-content: center; /* Por defecto los centra en pantallas móviles */
+    align-items: center;
+    gap: 15px; /* Espaciado fijo controlado entre los dos botones */
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btnAction {
+    display: inline-block;
+    background-color: #000000; /* Fondo negro inicial */
+    color: #ffffff; /* Texto blanco */
+    text-decoration: none; /* Eliminar subrayado de Link */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px; /* Bordes suaves y ovalados como en tu referencia */
+    text-align: center;
+    white-space: nowrap; /* Evita que el texto de los botones se rompa en dos renglones */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* EFECTO HOVER / ACTIVE (Modo On o presionado: Cambia a gris) */
+.btnAction:hover,
+.btnAction:active {
+    background-color: #555555 !important; /* Gris elegante al pasar el cursor o dar clic */
+    color: #ffffff !important;
+}
+
+/* --- ADAPTACIÓN PARA ESCRITORIO --- */
+@media (min-width: 768px) {
+    .purchaseActionsContainer {
+        justify-content: flex-start; /* Se alinea a la izquierda de la columna en computadoras */
+    }
+
+    .productDetailText {
+    text-align: left; /* Alineación centrada para los detalles */
+}
+}

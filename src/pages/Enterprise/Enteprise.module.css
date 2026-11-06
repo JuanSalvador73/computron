@@ -1,0 +1,92 @@
+/*
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    margin-top: 60px;
+}
+
+*/
+
+/* Contenedor principal con margen superior para no ser tapado por el Navbar fijo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*padding: 2rem 1rem;*/
+    /*font-family: sans-serif;*/
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+/* Título centrado con el mismo estilo corporativo */
+.title {
+    text-align: center;
+    /*font-size: 2.5rem;*/
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+/* Envolvedor del contenido */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/* Caja de la imagen para asegurar límites */
+.image-box {
+    width: 100%;
+    max-width: 900px; /* Centrado y contenido como en tu imagen de Galería */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagen fluida y responsiva */
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover; /* Recorta de forma armoniosa si la imagen es muy alta */
+    display: block;
+}
+
+/* Bloque contenedor de los párrafos */
+.text-content {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Estilo de los párrafos de lectura */
+.paragraph {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444444;
+    text-align: justify; /* Mantiene la estética limpia de bloques de texto largos */
+    margin: 0;
+}
+
+/* Ajustes responsivos para pantallas de celulares */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+        text-align: left; /* En pantallas muy pequeñas el justificado puede dejar espacios raros */
+    }
+}

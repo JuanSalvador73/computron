@@ -1,0 +1,69 @@
+.counterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los botones de sumar/restar y comprar en pantallas móviles */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.selectorRow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Botón Restar (-) */
+.btnMinus {
+    background-color: #ffffff !important;
+    color: #dc3545 !important; /* Texto rojo */
+    border: 1px solid #dc3545 !important; /* Borde rojo */
+    border-radius: 4px !important;
+    width: 35px;
+    height: 35px;
+    padding: 0 !important;
+    font-weight: bold;
+}
+
+/* Número central */
+.countSpan {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Botón Sumar (+) */
+.btnPlus {
+    background-color: #ffffff !important;
+    color: #198754 !important; /* Texto verde */
+    border: 1px solid #198754 !important; /* Borde verde */
+    border-radius: 4px !important;
+    width: 35px;
+    height: 35px;
+    padding: 0 !important;
+    font-weight: bold;
+}
+
+/* Botón Comprar abajo */
+.btnComprar {
+    background-color: #0d6efd !important;
+    border: none !important;
+    padding: 8px 30px !important;
+    border-radius: 6px !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btnComprar:hover {
+    background-color: #79a9f3 !important;
+}
+
+/* En pantallas grandes (Desktop): Se alinea a la izquierda de la columna de información */
+@media (min-width: 768px) {
+    .counterContainer {
+        align-items: flex-start; /* Recupera la alineación limpia de e-commerce a la izquierda */
+    }
+}

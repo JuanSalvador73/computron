@@ -1,0 +1,23 @@
+.navlinks {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around !important;
+    background-color: rgb(195, 195, 228);
+}
+
+.navlinks a {
+    text-decoration: none;
+}
+
+.navlogo {
+    width:150px;
+}
+
+.navfixed {
+    position: fixed;
+}
+
+/*https://www.youtube.com/watch?v=samof05Dy6A -- 
+How to Create Responsive Dropdown Menu with Sub
+
+Menu in Html CSS & Javascript* 17 mts*/
