@@ -13,7 +13,7 @@ Es imperativo tener Node con la versión v24.15.0
 
 ## Versión Host
 
-* Si solo desea ver el proyecto [online](https://computron-8cni.vercel.app) *
+* Si solo desea ver el proyecto [online](https://computron-8cni.vercel.app) 
 
 ## Librerías utilizadas
 
