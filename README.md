@@ -1,8 +1,8 @@
-#Este proyecto fue realizado para aprender las bases de React en Coderhouse
+# Este proyecto fue realizado para aprender las bases de React en Coderhouse
 
 ![alt](/src/assets/img/Frame-Logo.png)
 
-##Instalación
+## Instalación
 
 1. Hacer Clone al repositorio.
 2. Ir a la carpeta creada con el commando `cd nombre de la carpeta`.
@@ -11,11 +11,11 @@
 
 Es imperativo tener Node con la versión v24.15.0
 
-##Version Host
+## Version Host
 
 _Si solo desea ver el proyecto [online](https://computron-8cni.vercel.app)
 
-##Librerías utilizadas
+## Librerías utilizadas
 
 - React Bootstrap
 - React Icons
